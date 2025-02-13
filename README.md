@@ -4,6 +4,7 @@ Doing Stuff With Data
 
 Description: You are to build out a table that is able to sort in ascending and descending order in each field.
 
+### Desktop Build Built for 1440px to 1920px Width (Not Fully Complete)
 
 Requirements:
 
