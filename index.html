@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Showing Data</title>
+</head>
+<body class="bg-gray-500 p-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="bg-white rounded-lg p-6">
+        
+            <div class="mb-6">
+                <h1 class="font-bold text-black text-center text-5xl">Data Table</h1>
+            </div>
+
+    
+            <div class="flex justify-center gap-2 my-4">
+                <button id="sortById" class="px-4 py-2 border rounded bg-green-500 text-white hover:bg-green-600">Sort by ID</button>
+                <button id="sortByFirstName" class="px-4 py-2 border rounded bg-green-500 text-white hover:bg-green-600">Sort by First Name</button>
+                <button id="sortByLastName" class="px-4 py-2 border rounded bg-green-500 text-white hover:bg-green-600">Sort by Last Name</button>
+                <button id="sortByEmail" class="px-4 py-2 border rounded bg-green-500 text-white hover:bg-green-600">Sort by Email</button>
+                <button id="sortByHeight" class="px-4 py-2 border rounded bg-green-500 text-white hover:bg-green-600">Sort by Height</button>
+                <button id="sortByAge" class="px-4 py-2 border rounded bg-green-500 text-white hover:bg-green-600">Sort by Age</button>
+            </div>
+
+    
+            <div id="tableContainer" class="overflow-x-auto">
+                <table class="w-full text-left border ">
+                    <thead class="text-white bg-black">
+                        <tr>
+                            <th class="px-5 py-3">ID</th>
+                            <th class="px-5 py-3">First Name</th>
+                            <th class="px-5 py-3">Last Name</th>
+                            <th class="px-5 py-3">Email</th>
+                            <th class="px-5 py-3">Height</th>
+                            <th class="px-5 py-3">Age</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                      
+                    </tbody>
+                </table>
+            </div>
+
+        
+            <div class="flex justify-evenly mt-4">
+                <button id="prevButton" class="px-4 py-2 border rounded bg-black text-white hover:bg-gray-700">Previous</button>
+                <button id="nextButton" class="px-4 py-2 border rounded bg-black text-white hover:bg-gray-700">Next</button>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+
+</html>
